@@ -1,25 +1,20 @@
-import React , {Component} from 'react';
-import YouTube from 'react-youtube';
+import React from 'react';
 
 
-class Search extends Component{
-render(){
-    const opts = {
-        height: '390',
-        width: '640',
-        playerVars: { 
-          autoplay: 0
-        }
-      };
-
-      return(
-          <div>
-              {console.log("It works")}
-        <YouTube
-        videoId={this.state.videosID[0]}
-        opts={opts}
-      /></div>
-      )
-} 
+let Search = (props)=>{
+    return(
+        <div  style={{margin:10}}>
+          <input type="text" 
+          placeholder="   Search Video Here"
+           style={{margin:10,width:'40%'}}  
+           onChange={props.change}/>
+          <button
+           type="button"
+            className="btn btn-success"
+             onClick={props.click}>Search</button>
+          </div>
+    );
 }
+
+
 export default Search;
