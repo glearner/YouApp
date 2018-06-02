@@ -84,7 +84,7 @@ render(){
 
  return (
       <div>
-          <div className="App">
+          <div className="App text-center">
                 <Search 
                     change={this.onChangeHandler} 
                     click = {this.onClickHandler}
