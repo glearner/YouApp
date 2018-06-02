@@ -1,7 +1,7 @@
 ##
 clone the folder 
 
-type cd {foldername}
+type cd YouApp
 
 npm install
 
